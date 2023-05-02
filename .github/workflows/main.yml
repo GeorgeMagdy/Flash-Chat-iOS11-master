@@ -1,0 +1,11 @@
+name: flas chat workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  BlinkID:
+    runs-on: ubuntu-latest
+    steps:
+      - name: codeql repository
+        uses: github/codeql-action/init@v1
